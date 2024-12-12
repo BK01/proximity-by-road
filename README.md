@@ -1,2 +1,2 @@
 # nearest_facility
-Python scripts to determine distance and drive time from origin points to the nearest destination point as well as average distance and drive time to all destination points.
+Python scripts to determine distance and drive time from each origin point to the nearest destination point. Also provides average distance and drive time to all destination points.
