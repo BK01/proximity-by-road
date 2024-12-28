@@ -1,0 +1,11 @@
+1. Sample addresses (fromPoints):
+https://opendata.vancouver.ca/explore/dataset/property-addresses/
+
+    Open Government License - Vancouver:
+    https://opendata.vancouver.ca/pages/licence/
+
+2. Sample destinations (toPoints):
+https://catalogue.data.gov.bc.ca/dataset/383eaf98-afd7-436a-9556-67ecf14f64a7
+
+    Open Government License - British Columbia:
+    https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61
