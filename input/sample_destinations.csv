@@ -1,0 +1,14 @@
+id,name,address,longitude,latitude,albers_x,albers_y
+1,BC Children's Hospital,"4500 Oak Street, Vancouver, BC",-123.1,49.244514,1209538,474053
+2,Vancouver General Hospital - Leon Judah Blackmore Pavilion,"855 West 12th Avenue, Vancouver, BC",-123.1,49.260542,1209565,475837
+3,Vancouver General Hospital - Banfield Pavilion,"2785 Ash Street, Vancouver, BC",-123.1,49.260669,1209945,475866
+4,Vancouver General Hospital - Gordon and Leslie Diamond Health Care Centre,"2775 Laurel Street, Vancouver, BC",-123.1,49.261187,1209356,475900
+5,Vancouver General Hospital - Jim Pattison Pavilion,"899 West 12th Avenue, Vancouver, BC",-123.1,49.260558,1209472,475835
+6,Vancouver General Hospital - Willow Pavilion,"805 West 12th Avenue, Vancouver, BC",-123.1,49.26051,1209625,475836
+7,BC Women's Hospital and Health Centre,"4500 Oak Street, Vancouver, BC",-123.1,49.243637,1209454,473952
+8,Mount Saint Joseph Hospital,"3080 Prince Edward Street, Vancouver, BC",-123.1,49.257699,1211504,475600
+9,St. Paul's Hospital,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
+10,St. Paul's Hospital - Burrard Building,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
+11,St. Paul's Hospital - Providence II Building,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
+12,St. Paul's Hospital - Providence Building,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
+  
