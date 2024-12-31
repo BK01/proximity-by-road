@@ -1,14 +1,195 @@
-id,name,address,longitude,latitude,albers_x,albers_y
-1,BC Children's Hospital,"4500 Oak Street, Vancouver, BC",-123.1,49.244514,1209538,474053
-2,Vancouver General Hospital - Leon Judah Blackmore Pavilion,"855 West 12th Avenue, Vancouver, BC",-123.1,49.260542,1209565,475837
-3,Vancouver General Hospital - Banfield Pavilion,"2785 Ash Street, Vancouver, BC",-123.1,49.260669,1209945,475866
-4,Vancouver General Hospital - Gordon and Leslie Diamond Health Care Centre,"2775 Laurel Street, Vancouver, BC",-123.1,49.261187,1209356,475900
-5,Vancouver General Hospital - Jim Pattison Pavilion,"899 West 12th Avenue, Vancouver, BC",-123.1,49.260558,1209472,475835
-6,Vancouver General Hospital - Willow Pavilion,"805 West 12th Avenue, Vancouver, BC",-123.1,49.26051,1209625,475836
-7,BC Women's Hospital and Health Centre,"4500 Oak Street, Vancouver, BC",-123.1,49.243637,1209454,473952
-8,Mount Saint Joseph Hospital,"3080 Prince Edward Street, Vancouver, BC",-123.1,49.257699,1211504,475600
-9,St. Paul's Hospital,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
-10,St. Paul's Hospital - Burrard Building,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
-11,St. Paul's Hospital - Providence II Building,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
-12,St. Paul's Hospital - Providence Building,"1081 Burrard Street, Vancouver, BC",-123.1,49.280614,1209031,478047
-  
+FID,address,school_cat,school_nam,geo_local_,albers_x,albers_y
+0,4195 Alexandra St,Independent School,Little Flower Academy,Shaughnessy,1208205,474434
+1,3663 Penticton St,Public School,Lord Beaconsfield Elementary,Renfrew-Collingwood,1214710,475113
+2,3455 W King Edward Av,Public School,Lord Kitchener Elementary,Dunbar-Southlands,1205430,474562
+3,1150 Nelson St,Public School,Lord Roberts Annex,West End,1208956,478319
+4,4444 Dumfries St,Public School,Lord Selkirk Annex,Kensington-Cedar Cottage,1213302,474297
+5,2678 W Broadway,Independent School,Madrona School,Kitsilano,1206409,476041
+6,2300 Guelph St,StrongStart BC,Mount Pleasant StrongStart Centre,Mount Pleasant,1211649,476302
+7,2550 Camosun St,Independent School,Our Lady of Perpetual Help,West Point Grey,1204210,476021
+8,1819 Larch St,Independent School,Pacific Rim Montessori Academy,Kitsilano,1206640,476746
+9,1580 W Broadway,Public School,Peak House,Fairview,1208284,476091
+10,4102 W 16th Av,Public School,Queen Elizabeth Elementary,Dunbar-Southlands,1203878,475302
+11,1850 E 3rd Av,Public School,Queen Victoria Annex,Grandview-Woodland,1213646,476743
+12,3315 E 22nd Av,Public School,Renfrew Community Elementary,Renfrew-Collingwood,1216215,475100
+13,4250 Marguerite St,Public School,Shaughnessy Elementary,Shaughnessy,1208091,474457
+14,960 E 39th Av,Public School,Sir Alexander Mackenzie Elementary,Kensington-Cedar Cottage,1212313,473057
+15,419 E 24th Av,Public School,Sir Charles Tupper Secondary,Riley Park,1211654,474722
+16,3250 Kingsway,Public School,Sir Guy Carleton Community Elementary,Renfrew-Collingwood,1215891,473184
+17,1300 E 29th Av,Public School,Sir Richard McBride Elementary,Kensington-Cedar Cottage,1212891,474150
+18,1950 E Hastings St,Public School,Sir William Macdonald Community,Grandview-Woodland,1213706,478250
+19,7055 Heather St,Public School,Sir Winston Churchill Secondary,Oakridge,1209541,471445
+20,5855 Ontario St,Public School,Sir Wm Van Horne Elementary,Oakridge,1210881,472668
+21,1370 W 73rd Av,Independent School,St Anthony of Padua,Marpole,1208785,469569
+22,2215 W 10th Av,Independent School,St John's School,Kitsilano,1207126,476030
+23,5239 Joyce St,Independent School,St Mary's,Renfrew-Collingwood,1216160,473546
+24,115 E 11th Av,Independent School,St Patrick Regional Secondary,Mount Pleasant,1211034,475992
+25,2850 Quebec St,Independent School,St Patrick's Elementary,Mount Pleasant,1211054,475810
+26,3155 E 27th Av,Public School,Sunny Hill Hospital Program,Renfrew-Collingwood,1215866,474536
+27,2325 Cassiar St,Public School,Thunderbird Elementary,Hastings-Sunrise,1216172,476454
+28,3525 Dumphries St,Public School,Tyee Elementary,Kensington-Cedar Cottage,1213165,475208
+29,3496 Mons Drive,Independent School,Vancouver Christian,Renfrew-Collingwood,1216454,475472
+30,5400 Cartier St,Independent School,Vancouver College,Shaughnessy,1208709,472956
+31,1545 W 62nd Av,Independent School,Vancouver Hebrew Academy,Marpole,1208418,470778
+32,8650 Barnard St,Independent School,Vancouver Montessori School,Marpole,1208215,469915
+33,1000 E 59th Av,Public School,Walter Moberly Elementary,Sunset,1212570,471018
+34,3075 Slocan St,Independent School,Westside Montessori Academy,Renfrew-Collingwood,1214855,475653
+35,4176 Alexandra St,Independent School,York House School,Shaughnessy,1208343,474486
+36,688 W Hastings St,Independent School,Alexander Academy,Downtown,1210097,478578
+37,5025 Willow St,Public School,BC Children's Adol. Psych. Unit,South Cambie,1209444,473506
+38,1001 Cotton Drive,Public School,Britannia Community Secondary,Grandview-Woodland,1213204,477619
+39,3340 E 54th Av,Public School,Captain James Cook Elementary,Killarney,1216090,471528
+40,3340 E 54th Av,StrongStart BC,Captain James Cook StrongStart Centre,Killarney,1216090,471528
+41,3400 Balaclava St,Public School,Carnarvon Community Elementary,Arbutus Ridge,1205890,475248
+42,2684 E 2nd Av,StrongStart BC,Chief Maquinna StrongStart Centre,Hastings-Sunrise,1214790,476868
+43,3575 Kaslo St,Independent School,Children's Hearing and Speech Centre BC,Renfrew-Collingwood,1215025,475151
+44,3417 Euclid Av,Public School,Collingwood Neighbourhood School,Renfrew-Collingwood,1216267,473422
+45,1755 E 55th Av,Public School,David Thompson Secondary,Victoria-Fraserview,1213550,471540
+46,555 Lillooet St,Public School,Dr A R Lord Elementary,Hastings-Sunrise,1215541,478206
+47,6350 Tisdall St,Public School,Dr Annie B Jamieson Elementary,Oakridge,1209850,472107
+48,3050 Crown St,Public School,Ecole Jules Quesnel Elementary,West Point Grey,1204495,475524
+49,150 Drake St,Public School,Elsie Roy Elementary,Downtown,1209538,477136
+50,4070 Oak St,Public School,Emily Carr Elementary,South Cambie,1209375,474661
+51,4196 W 4th Av,Independent School,Family Montessori School,West Point Grey,1204044,476407
+52,2294 W 10th Av,Independent School,Fraser Academy,Kitsilano,1207048,475970
+53,2330 E 37th Av,Public School,G T Cunningham Elementary,Renfrew-Collingwood,1214434,473389
+54,3633 Tanner St,Public School,Graham Bruce Community Elementary,Renfrew-Collingwood,1216724,474078
+55,1551 Cypress St,Public School,Henry Hudson Elementary,Kitsilano,1207582,477057
+56,2490 W 37th Av,Independent School,Ivy Montessori School,Arbutus Ridge,1206807,473231
+57,451 E 53rd Av,Public School,John Henderson Elementary,Sunset,1211745,471702
+58,4710 Slocan St,Public School,John Norquay Elementary,Renfrew-Collingwood,1214836,473927
+59,5718 Willow St,Independent School,King David High School,Oakridge,1209691,472828
+60,1755 Barclay St,Public School,King George Secondary,West End,1208443,479047
+61,1130 Keefer St,StrongStart BC,Admiral Seymour StrongStart Centre,Strathcona,1212578,477967
+62,5025 Willow St,Public School,BC Childrens Hosp School Program,South Cambie,1209444,473506
+63,2251 Collingwood St,Public School,Bayview Community Elementary,Kitsilano,1205207,476322
+64,1690 Matthews Av,Public School,Canuck Place School Program,Shaughnessy,1208132,474791
+65,6955 Frontenac St,Public School,Champlain Heights Community Elementary,Killarney,1216673,471693
+66,1010 E 17th Av,Public School,Charles Dickens Elementary,Kensington-Cedar Cottage,1212535,475325
+67,2684 E 2nd Av,Public School,Chief Maquinna Elementary,Hastings-Sunrise,1214790,476868
+68,3417 Euclid Av,StrongStart BC,Collingwood StrongStart Centre,Renfrew-Collingwood,1216267,473422
+69,438 Terminal Av,Independent School,Columbia College,Strathcona,1211535,477142
+70,1580 W Broadway,Public School,Continuing Ed SD 39,Fairview,1208284,476091
+71,6344 Nanaimo St,Independent School,Corpus Christi School,Victoria-Fraserview,1214473,472242
+72,8370 Cartier St,Public School,David Lloyd George Elementary,Marpole,1208809,470181
+73,8370 Cartier St,StrongStart BC,David Lloyd George StrongStart Centre,Marpole,1208809,470181
+74,2421 Scarboro Av,Public School,David Oppenheimer Elementary,Victoria-Fraserview,1214481,470787
+75,7455 Maple St,Public School,Dr R E McKechnie Elementary,Kerrisdale,1207487,470989
+76,5025 Willow St,Public School,Eric Hamber Secondary,South Cambie,1209444,473506
+77,900 School Green,Public School,False Creek Elementary,Fairview,1209243,476553
+78,2740 Guelph St,StrongStart BC,Florence Nightingale StrongStart Centre,Mount Pleasant,1211687,475869
+79,1025 Slocan St,Public School,Garibaldi Annex,Hastings-Sunrise,1214779,477705
+80,2896 W 6th Av,Public School,General Gordon Elementary,Kitsilano,1206058,476299
+81,4105 Gladstone St,Public School,Gladstone Secondary,Kensington-Cedar Cottage,1214080,474584
+82,3745 W 28th Av,Independent School,Immaculate Conception School,Dunbar-Southlands,1204900,474208
+83,7455 Ontario St,Public School,J.W. Sexsmith Community Elementary,Marpole,1210783,471074
+84,801 E 54th Av,StrongStart BC,John Henderson StrongStart Centre,Sunset,1212278,471555
+85,530 E 41st Av,Public School,John Oliver Secondary,Sunset,1211882,472752
+86,3250 W 43rd Av,Public School,Kerrisdale Annex,Kerrisdale,1205715,472604
+87,2550 W 10th Av,Public School,Kitsilano Secondary,Kitsilano,1206589,475951
+88,1166 W 14th Av,Public School,L'Ecole Bilingue Elementary,Fairview,1209026,475541
+89,3939 W 16th Av,Public School,Lord Byng Secondary,West Point Grey,1204496,475524
+90,2235 Kitchener St,Public School,Lord Nelson Elementary,Grandview-Woodland,1214105,477353
+91,2235 Kitchener St,StrongStart BC,Lord Nelson StrongStart Centre,Grandview-Woodland,1214105,477353
+92,1750 E 22nd Av,StrongStart BC,Lord Selkirk StrongStart Centre,Kensington-Cedar Cottage,1213533,474792
+93,6360 Maple St,Public School,Magee Secondary,Kerrisdale,1207619,472200
+94,3375 Nootka St,Public School,Nootka Community Elementary,Renfrew-Collingwood,1215413,475304
+95,2880 Venables St,Independent School,Notre Dame Regional Secondary,Hastings-Sunrise,1215119,477762
+96,575 Slocan St,Independent School,Our Lady of Sorrows,Hastings-Sunrise,1214768,478166
+97,2409 E Pender St,Independent School,PALS Autism School,Hastings-Sunrise,1214341,478254
+98,4196 W 4th Av,Independent School,Pacific Spirit School,West Point Grey,1204044,476407
+99,5750 Oak St,Independent School,Pacific Torah Institute International,Oakridge,1209340,472811
+100,449 E 62nd Av,Public School,Pierre Elliott Trudeau Elementary,Sunset,1211659,470797
+101,3417 Euclid Av,Public School,Prov. Early Intervention Resource Prg,Renfrew-Collingwood,1216267,473422
+102,1300 E Broadway,StrongStart BC,Queen Alexandra StrongStart Centre,Kensington-Cedar Cottage,1212974,476135
+103,4275 Crown St,Public School,Queen Elizabeth Annex,Dunbar-Southlands,1204385,474337
+104,2000 Trimble St,Public School,Queen Mary Elementary,West Point Grey,1203566,476409
+105,1025 Slocan St,Public School,SD 39 DL Elementary,Hastings-Sunrise,1214779,477705
+106,2150 Brigadoon Av,Public School,Sir James Douglas Elementary,Victoria-Fraserview,1214005,471071
+107,250S Skeena St,Public School,Sir John Franklin Community,Hastings-Sunrise,1216396,478560
+108,1430 Lillooet St,Public School,Sir Matthew Begbie Elementary,Hastings-Sunrise,1215687,477344
+109,590 W 65th Av,Public School,Sir Wilfrid Laurier Annex,Marpole,1210037,470315
+110,5970 Selkirk St,Public School,Sir William Osler Elementary,Oakridge,1208984,472501
+111,5351 Camosun St,Public School,Southlands Elementary,Dunbar-Southlands,1204205,473130
+112,450 E 47th Av,Independent School,St Andrew's,Sunset,1211681,472216
+113,2145 W 8th Av,Independent School,St Augustine's,Kitsilano,1207308,476260
+114,870 Victoria Drive,Independent School,St Francis of Assisi,Grandview-Woodland,1213696,477823
+115,4175 W 29th Av,Independent School,St George's School,Dunbar-Southlands,1204116,474176
+116,3261 Fleming St,Independent School,St Joseph's,Kensington-Cedar Cottage,1213313,475475
+117,2953 E 15th Av,Independent School,St Jude's,Renfrew-Collingwood,1215422,475633
+118,727 Templeton Drive,Public School,Templeton Secondary,Grandview-Woodland,1214006,478009
+119,5400 Cartier St,Independent School,Vancouver College DL,Shaughnessy,1208709,472956
+120,5621 Killarney St,Independent School,Vancouver Formosa Academy,Renfrew-Collingwood,1215256,473091
+121,2600 E Broadway,Public School,Vancouver Technical Secondary,Renfrew-Collingwood,1214771,476074
+122,1000 E 59th Av,StrongStart BC,Walter Moberly StrongStart Centre,Sunset,1212570,471018
+123,6111 Elliott St,Public School,Waverley Elementary,Victoria-Fraserview,1214597,472406
+124,6111 Elliott St,StrongStart BC,Waverley StrongStart Centre,Victoria-Fraserview,1214597,472406
+125,4157 Oak St,Independent School,Westside Montessori,Shaughnessy,1209243,474492
+126,3155 E 27th Av,Public School,Windermere Community Secondary,Renfrew-Collingwood,1215866,474536
+127,3274 East Boulevard,Independent School,York House Little School,Shaughnessy,1207452,475324
+128,1130 Keefer St,Public School,Admiral Seymour Elementary,Strathcona,1212578,477967
+129,1351 Hornby St,Independent School,Anchor Point Montessori,Downtown,1208902,477646
+130,5025 Willow St,Public School,BCCH Eating Disorders School Program,South Cambie,1209444,473506
+131,3020 Heather St,Independent School,Blessed Sacrament School,Fairview,1209826,475602
+132,1110 Cotton Drive,Public School,Britannia Community Elementary,Grandview-Woodland,1213247,477541
+133,1788 W Broadway,Independent School,Century High School,Fairview,1207916,476085
+134,7835 Champlain Crescent,Public School,Champlain Heights Annex,Killarney,1216499,470956
+135,7835 Champlain Crescent,StrongStart BC,Champlain Heights Annex StrongStart Cntr,Killarney,1216499,470956
+136,3877 Glen Drive,Public School,Charles Dickens Annex,Kensington-Cedar Cottage,1212533,474809
+137,2882 E 4th Av,Public School,Chief Maquinna Annex,Hastings-Sunrise,1215195,476722
+138,3200 W 41st Av,Independent School,Crofton House,Kerrisdale,1205725,472694
+139,55 Expo Blvd,Public School,Crosstown Elementary,Downtown,1210665,477892
+140,315 E 23rd Av,Public School,David Livingstone Elementary,Riley Park,1211419,474823
+141,2900 E 44th Av,Public School,Dr George M Weir Elementary,Killarney,1215418,472634
+142,6100 Battison St,Public School,Dr H N MacCorkindale Elementary,Killarney,1216522,472504
+143,500 W 20th Av,Public School,Edith Cavell Elementary,South Cambie,1210008,475005
+144,2740 Guelph St,Public School,Florence Nightingale Elementary,Mount Pleasant,1211687,475869
+145,5025 Willow St,Public School,G F Strong School Program,South Cambie,1209444,473506
+146,4860 Main St,Public School,General Brock Elementary,Riley Park,1211269,473756
+147,4251 Ontario St,Public School,General Wolfe Elementary,Riley Park,1210854,474408
+148,2055 Woodland Dr,Public School,Grandview Elementary,Grandview-Woodland,1213067,476608
+149,2625 Franklin St,Public School,Hastings Community Elementary,Hastings-Sunrise,1214723,478503
+150,801 E 54th Av,Public School,John Henderson Annex,Sunset,1212278,471555
+151,5555 Carnarvon St,Public School,Kerrisdale Elementary,Dunbar-Southlands,1205988,472981
+152,6454 Killarney St,Public School,Killarney Secondary,Killarney,1215456,472160
+153,2500 Lakewood Drive,Public School,Laura Secord Elementary,Kensington-Cedar Cottage,1214117,476156
+154,1100 Bidwell St,Public School,Lord Roberts Elementary,West End,1208355,478705
+155,1750 E 22nd Av,Public School,Lord Selkirk Elementary,Kensington-Cedar Cottage,1213533,474792
+156,592 E Pender St,Public School,Lord Strathcona Community Elementary,Strathcona,1211760,478069
+157,1936 W 10th Av,Public School,Lord Tennyson Elementary,Kitsilano,1207624,475977
+158,1950 E Hastings St,StrongStart BC,MacDonald StrongStart Centre,Grandview-Woodland,1213706,478250
+159,6199 Cypress St,Public School,Maple Grove Elementary,Kerrisdale,1207616,472295
+160,2300 Guelph St,Public School,Mount Pleasant Elementary,Mount Pleasant,1211649,476302
+161,4102 W 16th Av,Public School,Norma Rose Point School,Dunbar-Southlands,1203878,475302
+162,5750 Oak St,Independent School,Pacific Torah Institute,Oakridge,1209340,472811
+163,981 Nelson St,Independent School,Pattison High School,Downtown,1209307,478110
+164,981 Nelson St,Independent School,Pattison School,Downtown,1209307,478110
+165,5350 East Boulevard,Public School,Point Grey Secondary,Shaughnessy,1207442,473164
+166,2250 Eddington Drive,Public School,Prince of Wales Secondary,Arbutus Ridge,1206963,474001
+167,1300 E Broadway,Public School,Queen Alexandra Elementary,Kensington-Cedar Cottage,1212974,476135
+168,5300 Maple St,Public School,Quilchena Elementary,Shaughnessy,1207577,473165
+169,8610 Ash St,Independent School,Royal Canadian College,Marpole,1210114,469931
+170,100 W 15th Av,Public School,Simon Fraser Elementary,Mount Pleasant,1210646,475505
+171,960 E 39th Av,StrongStart BC,Sir Alexander Mackenzie StrongStart,Kensington-Cedar Cottage,1212313,473057
+172,6901 Elliott St,Public School,Sir Charles Kingsford-Smith,Victoria-Fraserview,1214632,471714
+173,7668 Borden St,Public School,Sir James Douglas Annex,Victoria-Fraserview,1213381,470909
+174,4750 St. Catherines St,Public School,Sir Richard McBride Annex,Kensington-Cedar Cottage,1212408,473884
+175,1401 E 49th Av,Public School,Sir Sandford Fleming Elementary,Victoria-Fraserview,1213092,472111
+176,3323 Wellington Av,Public School,Sir Wilfred Grenfell Community,Renfrew-Collingwood,1216055,474141
+177,3323 Wellington Av,StrongStart BC,Sir Wilfred Grenfell StrongStart Centre,Renfrew-Collingwood,1216055,474141
+178,7350 Laurel St,Public School,Sir Wilfrid Laurier Elementary,Marpole,1209597,471080
+179,428 Great Northern Way,Independent School,St Francis Xavier,Mount Pleasant,1211599,476578
+180,1885 W Broadway,Independent School,St John's International,Kitsilano,1207725,476151
+181,3000 Commercial Drive,Independent School,Stratford Hall,Kensington-Cedar Cottage,1213464,475654
+182,1551 E 37th Av,Public School,Tecumseh Annex,Kensington-Cedar Cottage,1213293,473384
+183,1850 E 41st Av,Public School,Tecumseh Elementary,Victoria-Fraserview,1213688,472837
+184,788 Beatty St,Independent School,The Westside School,Downtown,1210172,477754
+185,2325 Cassiar St,StrongStart BC,Thunderbird StrongStart Centre,Hastings-Sunrise,1216172,476454
+186,2450 Cambridge St,StrongStart BC,Tillicum Annex StrongStart Centre,Hastings-Sunrise,1214341,478893
+187,2450 Cambridge St,Public School,Tillicum Community Annex,Hastings-Sunrise,1214341,478893
+188,4170 Trafalgar St,Public School,Trafalgar Elementary,Arbutus Ridge,1206570,474563
+189,1580 W Broadway,Public School,Vancouver Alternate,Fairview,1208284,476091
+190,530 E 41st Av,Public School,Vancouver Learning Network,Sunset,1211882,472752
+191,998 W 26th Av,Independent School,Vancouver Talmud Torah Elementary,South Cambie,1209333,474385
+192,15 N Renfrew St,Independent School,West Coast Christian School,Hastings-Sunrise,1215151,478784
+193,4125 W 8th Av,Independent School,West Point Grey Academy,West Point Grey,1203809,476331
