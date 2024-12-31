@@ -3,7 +3,7 @@
 *modified to include BC Albers coordinates*
 https://opendata.vancouver.ca/explore/dataset/property-addresses/
 
-    **Open Government License - Vancouver:**
+    Open Government License - Vancouver:
     https://opendata.vancouver.ca/pages/licence/
 
 **2. Sample destinations (toPoints):**
@@ -11,5 +11,5 @@ https://opendata.vancouver.ca/explore/dataset/property-addresses/
 *modified to include BC Albers coordinates*
 https://opendata.vancouver.ca/explore/dataset/schools/
 
-    **Open Government License - Vancouver:**
+    Open Government License - Vancouver:
     https://opendata.vancouver.ca/pages/licence/
