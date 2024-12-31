@@ -1,5 +1,5 @@
 **1. Sample addresses (fromPoints):**
-*modified to include BC Albers coordinates*
+\n*modified to include BC Albers coordinates*
 https://opendata.vancouver.ca/explore/dataset/property-addresses/
 
     **Open Government License - Vancouver:**
