@@ -1,6 +1,6 @@
 # Proximity Scripts
-- Python scripts to determine distance and drive time from each origin point to the nearest destination point (see figure 1).
-- Also calculates average distance and drive time for each destination point using all nearest origin points (see figure 2).
+- **1_dist_time_to_nearest_destination.py:** Use the [BC Route Planner](https://www2.gov.bc.ca/gov/content?id=9D99E684CCD042CD88FADC51E079B4B5) to determine distance and drive time from each origin point to the nearest destination point (see figure 1).
+- **2_avg_dist_time_per_destination.py:** Use the [BC Route Planner](https://www2.gov.bc.ca/gov/content?id=9D99E684CCD042CD88FADC51E079B4B5) to calculate average distance and drive time for each destination point using all nearest origin points (see figure 2).
 - Sample input arguments included at the top of each script.
 
 # Process Overview
