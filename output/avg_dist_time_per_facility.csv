@@ -1,1 +1,71 @@
 
+facility_id,avg_drv_time_sec,avg_drv_time_hrs,avg_dist,address_count
+Crosstown Elementary,146,00:02:26,1.02,632
+St Patrick Regional Secondary,141,00:02:21,0.89,858
+General Wolfe Elementary,99,00:01:39,0.55,595
+The Westside School,165,00:02:45,1.58,52
+St Patrick's Elementary,127,00:02:07,0.87,676
+Simon Fraser Elementary,97,00:01:37,0.71,810
+False Creek Elementary,166,00:02:46,1.1,139
+Admiral Seymour StrongStart Centre,108,00:01:48,0.68,557
+Pattison High School,122,00:02:02,0.85,428
+Charles Dickens Elementary,115,00:01:55,0.68,607
+Mount Pleasant StrongStart Centre,114,00:01:54,0.82,325
+Elsie Roy Elementary,134,00:02:14,1.05,207
+Lord Roberts Elementary,96,00:01:36,0.64,273
+Lord Strathcona Community Elementary,127,00:02:07,0.76,1159
+L'Ecole Bilingue Elementary,138,00:02:18,0.98,858
+Alexander Academy,106,00:01:46,0.68,468
+Florence Nightingale StrongStart Centre,139,00:02:19,1.16,1083
+Charles Dickens Annex,115,00:01:55,0.63,515
+Sir Alexander Mackenzie Elementary,119,00:01:59,0.66,1031
+BC Children's Adol. Psych. Unit,129,00:02:09,0.8,133
+Sir Richard McBride Annex,129,00:02:09,0.9,1401
+Vancouver Talmud Torah Elementary,127,00:02:07,1.11,438
+Westside Montessori,101,00:01:41,0.66,278
+Anchor Point Montessori,118,00:01:58,0.9,399
+Lord Roberts Annex,150,00:02:30,0.96,157
+King David High School,124,00:02:04,0.93,309
+David Livingstone Elementary,111,00:01:51,0.79,1344
+King George Secondary,102,00:01:42,0.7,540
+Vancouver College,118,00:01:58,0.7,274
+Britannia Community Elementary,111,00:01:51,0.69,26
+Sir Wm Van Horne Elementary,142,00:02:22,0.8,340
+Emily Carr Elementary,102,00:01:42,0.5,183
+General Brock Elementary,89,00:01:29,0.75,1330
+Grandview Elementary,143,00:02:23,1.05,84
+Edith Cavell Elementary,105,00:01:45,0.58,856
+Peak House,115,00:01:55,0.94,898
+Sir Richard McBride Elementary,117,00:01:57,0.86,992
+Stratford Hall,119,00:01:59,0.8,813
+Tyee Elementary,99,00:01:39,0.59,403
+York House School,147,00:02:27,0.93,612
+Britannia Community Secondary,146,00:02:26,1.02,1
+Queen Alexandra StrongStart Centre,135,00:02:15,0.63,157
+Lord Selkirk StrongStart Centre,122,00:02:02,0.72,957
+Columbia College,112,00:01:52,0.78,105
+Sir Sandford Fleming Elementary,154,00:02:34,1.37,34
+Tecumseh Annex,135,00:02:15,0.78,1368
+Lord Selkirk Annex,120,00:02:00,0.74,176
+St Joseph's,123,00:02:03,0.68,65
+Canuck Place School Program,140,00:02:20,1.18,323
+Little Flower Academy,112,00:01:52,0.74,27
+Quilchena Elementary,112,00:01:52,0.67,418
+Century High School,68,00:01:08,0.48,7
+Henry Hudson Elementary,108,00:01:48,1.0,23
+York House Little School,105,00:01:45,0.6,170
+St John's International,123,00:02:03,0.83,56
+Tecumseh Elementary,96,00:01:36,0.61,47
+St Francis Xavier,77,00:01:17,0.52,151
+Laura Secord Elementary,102,00:01:42,0.55,196
+Blessed Sacrament School,115,00:01:55,0.7,467
+Gladstone Secondary,103,00:01:43,0.64,516
+Point Grey Secondary,146,00:02:26,0.75,27
+Lord Beaconsfield Elementary,139,00:02:19,0.92,258
+G T Cunningham Elementary,146,00:02:26,0.72,503
+John Oliver Secondary,120,00:02:00,0.81,149
+Corpus Christi School,172,00:02:52,1.48,5
+John Norquay Elementary,144,00:02:24,1.32,6
+Westside Montessori Academy,176,00:02:56,1.38,36
+Vancouver Technical Secondary,94,00:01:34,0.71,2
+Sir William Osler Elementary,198,00:03:18,1.19,1
