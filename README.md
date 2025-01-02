@@ -1,5 +1,6 @@
 # Proximity Scripts
-- Python scripts to determine distance and drive time from each origin point to the nearest destination point. Also provides average distance and drive time to all destination points. 
+- Python scripts to determine distance and drive time from each origin point to the nearest destination point (see figure 1).
+- Also calculates average distance and drive time for each destination point using all nearest origin points (see figure 2).
 - Sample input arguments included at the top of each script.
 
 # Process Overview
