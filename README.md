@@ -12,8 +12,6 @@ Figure 1: Determine the nearest destination point to each origin point based on 
 
 Figure 2: Calculate average distance and drive time to each destination point using all nearest origin points (2_avg_dist_time_per_destination.py)
 
-# BC Route Planner access:
-**The BC Route Planner is currently only available for use by B.C. Government Ministries.**
-
 # API key request form:
+**The BC Route Planner is currently only available for use by B.C. Government Ministries.**
 https://dpdd.atlassian.net/servicedesk/customer/portal/1/group/7/create/9
