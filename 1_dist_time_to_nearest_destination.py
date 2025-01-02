@@ -8,7 +8,7 @@ This script will use two CSV input files (addresses, facility locations)
 and read them into memory. Following that, the script will confirm the
 nearest facility to each address by evaluating a number of the nearest
 facilities to each address as a percentage of the total. For example, if
-there are 120 facilities and a value of 10 is provided, then the nearest
+there are 120 facilities and a value of .01 is provided, then the nearest
 12 facilities (euclidean distance) to each address will be routed
 to determine the single nearest facility.
 
@@ -28,21 +28,23 @@ Instructions:
                                 <Unique ID field (from facility file)>
                                 <X coordinate field (from facilities file)>
                                 <Y coordinate field (from facilities file)>
-                                <Facility location subset percentage>
+                                <Facility location subset percentage value
+                                    (between 0.001 and 1.0)>
                                 <EPSG code (Available values : 4326, 4269,
                                     3005, 26907, 26908, 26909, 26910, 26911)>
                                 <API key for BC Route Planner (PROD)>
                                 <dataset tag>
 
 Example:
-        python avgDriveAndDist.py C:\temp\nearestLocationBetweenPairs\
-            10_percent_site_Hybrid_geocoder.csv
-            FULL_ADDRESS SITE_ALBERS_X SITE_ALBERS_Y
-            GSR_SERVICE_BC_OFFICES_SVW.csv
-            OFFICE_NAM ALBERS_X ALBERS_Y
-            10
+        python 1_dist_time_to_nearest_destination.py
+            C:\temp\nearestLocationBetweenPairs\
+            sample_addresses.csv
+            address albers_x albers_y
+            schools_vancouver.csv
+            school_nam albers_x albers_y
+            0.3
             3005
-            BHmXTRFtYq162zO0A5YkyZlTKdt3EFZO
+            rHmXTRFtYq162zO0A5YkyZlTKdt3EFZO
             schools
 
 
@@ -50,6 +52,9 @@ Assumptions:
 
 - You have both an 'input' and 'output' folder in your workspace
 - Correct field names have been provided including a unique ID field.
+- Facility location subset percentage is written as follows:
+    - 10% = 0.1
+    - 100% = 1 (or 1.0)
 - Hardcoded values for request to BC Route Planner
    > criteria=fastest
    > correctSide=true
@@ -216,7 +221,7 @@ facility_y_coord_field = sys.argv[9]
 
 # The percentage of the total facility locations across the province to
 # select near each address to determine the closest facility.
-facility_sample = int(sys.argv[10])
+facility_sample = float(sys.argv[10])
 
 # List of valid EPSG codes
 valid_epsg_codes = {4326, 4269, 3005, 26907, 26908, 26909, 26910, 26911}
@@ -244,8 +249,8 @@ data_tag = sys.argv[13]
 
 try:
     # Check if the value is within the valid range
-    if not (1 <= facility_sample <= 100):
-        raise ValueError(f'Invalid value for facility_sample: {facility_sample}. Must be between 1 and 100.')
+    if not (0.001 <= facility_sample <= 1.0):
+        raise ValueError(f'Invalid value for facility_sample: {facility_sample}. Must be between 0.001 and 100.0.')
 except IndexError:
     print('Error: Missing required argument for facility_sample.')
     sys.exit(1)
@@ -381,14 +386,14 @@ print(f'\nCalculations required: {len(dfAddresses)}\n')
 
 try:
     # Calculate near_facility_count
-    near_facility_count = round(len(dfFacilities) * (int(facility_sample) / 100))
+    near_facility_count = round(len(dfFacilities) * facility_sample)
 
     # Check if the value is valid
-    if near_facility_count > 100:
+    if near_facility_count < 1 or near_facility_count > len(dfFacilities):
         raise ValueError(
             f'Invalid value for near_facility_count: {near_facility_count}. '
-            'The value must be less than or equal to 100. Try using a lower'
-            ' percentage of facility locations.'
+            'The value must be at least 1 and at most '
+            'the total number of facilities.'
         )
 except ValueError as e:
     print(f'Error: {e}')
@@ -570,4 +575,3 @@ minutes, seconds = divmod(rem, 60)
 print(
     f'\nProcessing complete. Elapsed time: {int(hours)} hours, {int(minutes)} minutes, and {seconds:.2f} seconds'
 )
-
