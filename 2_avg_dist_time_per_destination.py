@@ -24,9 +24,10 @@ Instructions:
                                 <API key for BC Route Planner (PROD)>
 
 Example:
-        python avgDriveAndDist.py C:\temp\avgDriveTimeAndDist\
-               1000_address_sample_nearest_facility.csv
-               FULL_ADDRESS SITE_ALBERS_X SITE_ALBERS_Y
+        python 2_avg_dist_time_per_destination.py
+               C:\temp\nearestLocationBetweenPairs\
+               sample_addresses_nearest_schools_20241231_114219.csv
+               address albers_x albers_y
                nearest_facility coord_x coord_y
                3005
                0rm3P1W86iBbaSYafinyOXrIZjiSbOgi
@@ -273,11 +274,11 @@ tr_nearest_facilities = pd.read_csv(
              facility_x_coord, facility_y_coord],
     dtype={
         address_id: 'object',
-        address_x_coord: 'Int32',  # Use pandas nullable integer type
-        address_y_coord: 'Int32',
-        facility_id: 'category',
-        facility_x_coord: 'Int32',
-        facility_y_coord: 'Int32'
+        address_x_coord: 'object',
+        address_y_coord: 'object',
+        facility_id: 'object',
+        facility_x_coord: 'object',
+        facility_y_coord: 'object'
     },
     iterator=True,
     on_bad_lines='warn',
@@ -482,4 +483,3 @@ print('\nThe script processed in: ' +
 scriptStartTime = None
 scriptStopTime = None
 scriptProcessingTime = None
-
