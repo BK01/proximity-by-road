@@ -55,6 +55,7 @@ Assumptions:
 - Facility location subset percentage is written as follows:
     - 10% = 0.1
     - 100% = 1 (or 1.0)
+- The epsg code provided applies to the coordinate system used in both input files.
 - Hardcoded values for request to BC Route Planner
    > criteria=fastest
    > correctSide=true
