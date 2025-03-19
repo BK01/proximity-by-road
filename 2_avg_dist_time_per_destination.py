@@ -4,8 +4,9 @@
 # DESCRIPTION
 '''
 
-This script will calculate the drive time (average, median, min, max), 
-distance and number of addresses per facility location.
+This script will calculate the average drive time,
+distance (average, median, min, max) and number of
+addresses per facility location.
 
 Instructions:
 
