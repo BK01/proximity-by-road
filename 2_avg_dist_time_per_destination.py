@@ -4,8 +4,8 @@
 # DESCRIPTION
 '''
 
-This script will calculate the average drive time, distance and
-number of addresses per facility location.
+This script will calculate the drive time (average, median, min, max), 
+distance and number of addresses per facility location.
 
 Instructions:
 
@@ -57,7 +57,7 @@ import platform
 import requests
 from requests.sessions import Session
 from retry import retry
-from statistics import mean
+from statistics import mean, median
 import sys
 import time
 import warnings
@@ -348,8 +348,12 @@ outputFileContents = [
     'avg_drv_time_sec',
     'avg_drv_time_hrs',
     'avg_dist',
+    'median_dist',
+    'min_dist',
+    'max_dist',
     'address_count'
-    ]
+]
+
 write_to_csv(outputFileName, outputFileContents)
 
 # Iterate through unique facility IDs in the list created above
@@ -430,11 +434,19 @@ for unique_facility in unique_facilities.keys():
     avgDriveTimeHrs = seconds_to_hours(avgDriveTime)
     avgDistance = round(mean(distanceListComplete), 2)
 
+    # Calculate average, median, min, and max distances
+    medianDistance = round(median(distanceListComplete), 2)
+    minDistance = round(min(distanceListComplete), 2)
+    maxDistance = round(max(distanceListComplete), 2)
+
     outputFileContents = [
         unique_facility,
         str(avgDriveTime),
         str(avgDriveTimeHrs),
         str(avgDistance),
+        str(medianDistance),
+        str(minDistance),
+        str(maxDistance),
         str(address_count)
         ]
     write_to_csv(outputFileName, outputFileContents)
