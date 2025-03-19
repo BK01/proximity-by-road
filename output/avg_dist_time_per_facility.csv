@@ -1,5 +1,5 @@
 
-facility_id,avg_drv_time_sec,avg_drv_time_hrs,avg_dist,address_count
+facility_id,avg_drv_time_sec,avg_drv_time_hrs,avg_dist_km,address_count
 Crosstown Elementary,146,00:02:26,1.02,632
 St Patrick Regional Secondary,141,00:02:21,0.89,858
 General Wolfe Elementary,99,00:01:39,0.55,595
