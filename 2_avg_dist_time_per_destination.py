@@ -463,6 +463,7 @@ address_y_coord = None
 apiKey = None
 api_rate_limit = None
 avgDriveTime = None
+avgDriveTimeHrs = None
 avgDistance = None
 csv_column_check = None
 del df_nearest_fac
@@ -475,6 +476,9 @@ epsg_code = None
 facility_id = None
 facility_x_coord = None
 facility_y_coord = None
+maxDistance = None
+medianDistance = None
+minDistance = None
 nearest_facility_filename = None
 route_planner_apikey = None
 routeNotFoundCount = None
