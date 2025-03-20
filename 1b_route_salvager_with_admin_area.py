@@ -23,7 +23,7 @@ Instructions:
         python <Script_name.py> <workspace path including final slash>
                                 <proximity result file with extension>
                                 <full, unsampled address file with extension>
-                                <admin zone ID field (from facility file)>
+                                <Administrative area ID field>
                                 <address field name>
                                 <X coordinate field (for addresses)>
                                 <Y coordinate field (for addresses)>
@@ -119,10 +119,10 @@ proximity_result_file = sys.argv[2]
 full_2M_address_file = sys.argv[3]
 
 # administrative boundary ID field
-admin_id_column = sys.argv[4]
+admin_id_field = sys.argv[4]
 
 # full address field from proximity analysis result file
-address_column = sys.argv[5]
+address_field = sys.argv[5]
 
 # Input address X coordinate field
 address_x_coord_field = sys.argv[6]
@@ -164,7 +164,7 @@ df_route_not_found = df_route_not_found[df_route_not_found[tag_column].isna()]
 print(f'Subset row count where the "{tag_column}" column is null: {len(df_route_not_found)}')
 
 # Count cases per admin area
-da_dict = df_route_not_found[admin_id_column].value_counts().to_dict()
+da_dict = df_route_not_found[admin_id_field].value_counts().to_dict()
 
 # List for not routable admin areas
 da_not_routable = []
@@ -178,13 +178,13 @@ selected_rows = set()
 # Iterate through each admin area
 for daid in da_dict.keys():
     current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    print(f'[{current_time}] Finding replacement addresses for {admin_id_column} = {daid}')
-    filtered_df_route_not_found = df_route_not_found[df_route_not_found[admin_id_column] == daid]
-    filtered_df_2M_addresses = df_2M_addresses[df_2M_addresses[admin_id_column] == daid]
+    print(f'[{current_time}] Finding replacement addresses for {admin_id_field} = {daid}')
+    filtered_df_route_not_found = df_route_not_found[df_route_not_found[admin_id_field] == daid]
+    filtered_df_2M_addresses = df_2M_addresses[df_2M_addresses[admin_id_field] == daid]
 
     if daid not in da_not_routable:
         for _, row in filtered_df_route_not_found.iterrows():
-            non_matching_df = filtered_df_2M_addresses[filtered_df_2M_addresses[address_column] != row[address_column]]
+            non_matching_df = filtered_df_2M_addresses[filtered_df_2M_addresses[address_field] != row[address_field]]
 
             if not non_matching_df.empty:
                 route_found = False
@@ -218,9 +218,9 @@ for daid in da_dict.keys():
                     break
 
         # Append remaining rows for the same daid without exceeding original count
-        remaining_rows_same_daid = df_route_not_found[df_route_not_found[admin_id_column] == daid]
+        remaining_rows_same_daid = df_route_not_found[df_route_not_found[admin_id_field] == daid]
         max_replacements_for_daid = len(remaining_rows_same_daid)
-        current_replacements_for_daid = len([row for row in replacement_rows if row[admin_id_column] == daid])
+        current_replacements_for_daid = len([row for row in replacement_rows if row[admin_id_field] == daid])
 
         for _, remaining_row in remaining_rows_same_daid.iterrows():
             remaining_row_tuple = tuple(remaining_row)
@@ -233,7 +233,7 @@ for daid in da_dict.keys():
 
             # Stop if the limit is reached
             if current_replacements_for_daid >= max_replacements_for_daid:
-                print(f'Reached maximum replacements for {admin_id_column} = {daid}')
+                print(f'Reached maximum replacements for {admin_id_field} = {daid}')
                 break
 
 # Convert replacement rows list to DataFrame
