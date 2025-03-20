@@ -347,10 +347,11 @@ del tpAddressPoints
 
 dfAddresses['nearest_facility'] = ['Unknown'] * len(dfAddresses)
 
-print(f'\nTotal number of addresses: {len(dfAddresses)}')
+# Subtract 1 to not count the CSV file header
+print(f'\nTotal number of addresses: {len(dfAddresses)-1}')
 
 # Total number of addresses to process
-total_requests = len(dfAddresses)
+total_requests = len(dfAddresses)-1
 
 # Read the facilities CSV into a pandas dataframe in chunks
 tpFacilities = pd.read_csv(
@@ -383,7 +384,7 @@ del tpFacilities
 
 print(f'Total number of facilities: {len(dfFacilities)}')
 
-print(f'\nCalculations required: {len(dfAddresses)}\n')
+print(f'\nCalculations required: {len(dfAddresses)-1}\n')
 
 try:
     # Calculate near_facility_count
