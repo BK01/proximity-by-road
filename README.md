@@ -17,7 +17,7 @@
 
 **Figure 2:** If processing a sample of a larger dataset, this script can be used to replace unroutable coordinates with routable coordinates (1b_route_salvager_with_admin_area.py.py).
 
-![avg_dist](https://github.com/user-attachments/assets/863b8995-1173-46cb-a4ec-6afdd1ad542d)
+![avg_dist_2](https://github.com/user-attachments/assets/753461cd-cb21-4b9c-ada9-58232ad98432)
 
 **Figure 3:** Calculate average distance and drive time to each destination point using all nearest origin points (2_avg_dist_time_per_destination.py)
 
