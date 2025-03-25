@@ -12,7 +12,7 @@ https://opendata.vancouver.ca/explore/dataset/property-addresses/
 
 ---
 
-**2.  Current Census Dissemination Blocks:**
+**2.  Dissemination Block ID values:**
 
 https://catalogue.data.gov.bc.ca/dataset/76909e49-8ba8-44b1-b69e-dba1fe9ecfba
 
