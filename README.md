@@ -15,7 +15,7 @@
 
 ![route_salvager](https://github.com/user-attachments/assets/7a90a0c1-b04b-4f05-933f-5f664749a07b)
 
-**Figure 2:** If processing a sample of a larger dataset, this script can be used to replace unroutable coordinates with routable coordinates (1b_route_salvager_with_admin_area.py.py).
+**Figure 2:** If processing a sample of a larger dataset, this script can be used to replace unroutable coordinates with routable coordinates (1b_route_salvager_with_admin_area.py).
 
 ![avg_dist_2](https://github.com/user-attachments/assets/753461cd-cb21-4b9c-ada9-58232ad98432)
 
