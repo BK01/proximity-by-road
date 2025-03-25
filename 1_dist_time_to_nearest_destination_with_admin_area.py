@@ -60,7 +60,7 @@ Assumptions:
 - The epsg code provided applies to the coordinate system used in both input files.
 - Hardcoded values for request to BC Route Planner
    > criteria=fastest
-   > correctSide=true
+   > correctSide=false
    > distanceUnit=km
    > enable=gdf,ldf,tr,xc,tc
 
@@ -111,7 +111,7 @@ def submit_request(fromPt, toPts, epsg_code):
         'betweenPairs.json?'
         'fromPoints={}&toPoints={}&criteria='
         'fastest&outputSRS={}&enable=gdf,ldf,tr,xc,tc&'
-        'correctSide=true'
+        'correctSide=false'
         '&distanceUnit=km'.format(fromPt.strip(), toPts.strip(), epsg_code)
     )
 
@@ -277,17 +277,12 @@ output_file_from_points = (
     + '_nearest_with_admin_id_' + data_tag + '_' + current_timestamp + '.csv'
 )
 
-### A backup copy of the fromPoints file
-##from_point_backup = output_file_from_points.replace('.csv', '_backup.csv')
-
 # File to hold a list of fromPoints that don't navigate to any toPoints.
 log_no_route_found = output_file_from_points.replace(
     '.csv', '_errors.csv'
 )
 
-error_file_headings = 'address,coordinates'
-
-write_to_csv(log_no_route_found, error_file_headings)
+error_file_headings = [address_id_field, 'coords']
 
 # Temporary list to hold field values for the output CSV file
 output_file_contents = []
@@ -323,6 +318,9 @@ if os.path.exists(output_file_from_points):
     os.remove(output_file_from_points)
 elif os.path.exists(log_no_route_found):
     os.remove(log_no_route_found)
+
+# Write the CSV file headings for the error log file.
+write_to_csv(log_no_route_found, error_file_headings)
 
 # Read in the CSV files with specified fields
 # Read the input address CSV into a pandas dataframe in chunks
