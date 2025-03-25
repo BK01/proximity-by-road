@@ -8,6 +8,13 @@ This script will calculate the average drive time,
 distance (average, median, min, max) and number of
 addresses per facility location.
 
+If there is a single minimum road distance value of 0 m, it will be assumed
+to represent an identical origin and destination coordinate. In this case,
+the 0 m value will be ignored and the next largest minimum value used. If
+there is more than one minimum road distance value of 0 m it will be assumed
+to represent multiple units within the same building and used as the minimum
+distance value.
+
 Instructions:
 
  1. Start menu -> Run -> Type 'cmd'
@@ -83,7 +90,7 @@ def submit_request(fromPt, toPts, epsg_code):
         'betweenPairs.json?'
         'fromPoints={}&toPoints={}&criteria=fastest&'
         'outputSRS={}&enable=sc,gdf,ldf,tr,xc,tc&'
-        'correctSide=true&'
+        'correctSide=false&'
         'distanceUnit=km'.format(fromPt.strip(), toPts.strip(), epsg_code)
     )
     try:
@@ -437,8 +444,17 @@ for unique_facility in unique_facilities.keys():
 
     # Calculate average, median, min, and max distances
     medianDistance = round(median(distanceListComplete), 2)
-    minDistance = round(min(distanceListComplete), 2)
     maxDistance = round(max(distanceListComplete), 2)
+
+    # Count the number of times a driving distance of 0 m is found.
+    zero_distance_count = sum(1 for d in distanceListComplete if d == 0)
+
+    if zero_distance_count == 1:
+        # Find the smallest non-zero distance
+        non_zero_distances = [d for d in distanceListComplete if d > 0]
+        minDistance = round(min(non_zero_distances), 4) if non_zero_distances else 0
+    else:
+        minDistance = round(min(distanceListComplete), 4)
 
     outputFileContents = [
         unique_facility,
