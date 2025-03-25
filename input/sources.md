@@ -8,7 +8,6 @@ https://opendata.vancouver.ca/explore/dataset/property-addresses/
 ***Modifications:**  
     - Added BC Albers coordinates  
     - Data subset limited to Downtown, Fairview, Kensington-Cedar Cottage, Mount Pleasant, Riley Park, Shaughnessy, South Cambie, Strathcona, West End*
-    
     - Spatial join performed to add dissemination block ID from the following source
         
           Current Census Dissemination Blocks
