@@ -5,14 +5,14 @@ Hardcoded BC Route Planner parameter values in Python scripts:
 
 * criteria=fastest  
 * enable=gdf,ldf,tr,xc,tc  
-* correctSide=true  
+* correctSide=false  
 * distanceUnit=km  
 
 **1_dist_time_to_nearest_destination_with_admin_area.py**  
 
 * criteria=fastest  
 * enable=gdf,ldf,tr,xc,tc  
-* **correctSide=false**  
+* correctSide=false  
 * distanceUnit=km  
 
 
@@ -20,7 +20,7 @@ Hardcoded BC Route Planner parameter values in Python scripts:
 
 * criteria=fastest  
 * enable=gdf,ldf,tr,xc,tc  
-* correctSide=true  
+* correctSide=false  
 * distanceUnit=km  
 
 **2_avg_dist_time_per_destination.py**  
