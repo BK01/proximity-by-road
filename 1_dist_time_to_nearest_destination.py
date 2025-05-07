@@ -58,7 +58,7 @@ Assumptions:
 - The epsg code provided applies to the coordinate system used in both input files.
 - Hardcoded values for request to BC Route Planner
    > criteria=fastest
-   > correctSide=true
+   > correctSide=false
    > distanceUnit=km
    > enable=gdf,ldf,tr,xc,tc
 
@@ -109,7 +109,7 @@ def submit_request(fromPt, toPts, epsg_code):
         'betweenPairs.json?'
         'fromPoints={}&toPoints={}&criteria='
         'fastest&outputSRS={}&enable=gdf,ldf,tr,xc,tc&'
-        'correctSide=true'
+        'correctSide=false'
         '&distanceUnit=km'.format(fromPt.strip(), toPts.strip(), epsg_code)
     )
 
