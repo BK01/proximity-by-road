@@ -8,7 +8,7 @@
 - **2_avg_dist_time_per_destination.py:** Use the [BC Route Planner](https://www2.gov.bc.ca/gov/content?id=9D99E684CCD042CD88FADC51E079B4B5) to calculate average distance and drive time for each destination point using all nearest origin points (see figure 2).
 - **2_avg_dist_time_per_destination_no_routing.py:** Calculate average distance and drive time for each destination point using only the input CSV file (no routing involved).
 - *Sample input arguments included at the top of each script.*
-- BC Route Planner API parameter defaults are listed [here.](https://github.com/BK01/proximity-by-road/blob/main/parameter_default_values.md)
+- *BC Route Planner API parameter defaults are listed [here.](https://github.com/BK01/proximity-by-road/blob/main/parameter_default_values.md)*
 
 # Process Overview
 ![image](https://github.com/user-attachments/assets/2e186f26-ca62-4a07-9c91-adabd3153df6)
