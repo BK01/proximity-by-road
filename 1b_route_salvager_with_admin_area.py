@@ -45,6 +45,11 @@ Assumptions:
 
 - You have both an 'input' and 'output' folder in your workspace
 - The tag field is included in input csv data as 'tag'
+- Hardcoded values for request to BC Route Planner
+   > criteria=fastest
+   > correctSide=false
+   > distanceUnit=km
+   > enable=gdf,ldf,tr,xc,tc
 
 '''
 # -------------------------------------------------------------------
@@ -72,7 +77,7 @@ def isolation_check(fromPt, toPts, epsg_code):
     isolation_routePlanner = (
         f'https://router.api.gov.bc.ca/directions.json?'
         f'points={fromPt.strip()},{toPts.strip()}&criteria=fastest&outputSRS={epsg_code}'
-        f'&enable=gdf,ldf,tr,xc,tc&correctSide=true&distanceUnit=km{route_planner_apikey.strip()}'
+        f'&enable=gdf,ldf,tr,xc,tc&correctSide=false&distanceUnit=km{route_planner_apikey.strip()}'
     )
     try:
         isolation_response = requests.get(isolation_routePlanner, timeout=10)
