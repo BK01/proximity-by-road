@@ -51,6 +51,11 @@ Assumptions:
   fields in the CSV.
 - EPSG code is one of the following:
   4326, 4269, 3005, 26907, 26908, 26909, 26910, 26911
+  - Hardcoded values for request to BC Route Planner
+   > criteria=fastest
+   > correctSide=false
+   > distanceUnit=km
+   > enable=gdf,ldf,tr,xc,tc
 
 '''
 # -------------------------------------------------------------------
