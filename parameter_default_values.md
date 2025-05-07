@@ -12,7 +12,7 @@ Hardcoded BC Route Planner parameter values in Python scripts:
 
 * criteria=fastest  
 * enable=gdf,ldf,tr,xc,tc  
-* correctSide=false  
+* **correctSide=false**  
 * distanceUnit=km  
 
 
