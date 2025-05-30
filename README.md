@@ -1,6 +1,6 @@
 # Proximity Scripts
 
-This repo contains python scripts (described below) and sample data that perform proximity analysis using the [betweenPairs](https://openapi.apps.gov.bc.ca/?url=https://raw.githubusercontent.com/bcgov/api-specs/master/router/router.json#/distance/get_distance_betweenPairs__outputFormat) endpoint of the [BC Route Planner](https://www2.gov.bc.ca/gov/content?id=9D99E684CCD042CD88FADC51E079B4B5).
+This repo contains python scripts (described below) and sample data to perform proximity analysis using the [betweenPairs](https://openapi.apps.gov.bc.ca/?url=https://raw.githubusercontent.com/bcgov/api-specs/master/router/router.json#/distance/get_distance_betweenPairs__outputFormat) endpoint of the [BC Route Planner](https://www2.gov.bc.ca/gov/content?id=9D99E684CCD042CD88FADC51E079B4B5).
 
 - **1_dist_time_to_nearest_destination.py:** Use the [BC Route Planner](https://www2.gov.bc.ca/gov/content?id=9D99E684CCD042CD88FADC51E079B4B5) to determine distance and drive time from each origin point to the nearest destination point **(figure 1)**.
 
